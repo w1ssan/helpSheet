@@ -50,5 +50,14 @@ public class MethodTester {
 
         System.out.println("Surface Area of a Hexagonal prism = " + MathHelpMethods.surfaceHexagonalPrism(15, 20));
         System.out.println("Volume of a Square Hexagonal prism = " + MathHelpMethods.volumeHexagonalPrism(15, 20));
+
+        System.out.println("Surface Area of a Pentagonal prism = " + MathHelpMethods.surfacePentPrism(15, 20));
+        System.out.println("Volume of a Square Pentagonal prism = " + MathHelpMethods.volumePentPrism(15, 20));
+
+        System.out.println("Surface Area of a Hexagonal pyramid = " + MathHelpMethods.surfaceHexPyramid(15, 20));
+        System.out.println("Volume of a Square Hexagonal pyramid = " + MathHelpMethods.volumeHexPyramid(15, 20));
+
+        System.out.println("Surface Area of a octagonal prism = " + MathHelpMethods.surfaceOctaPrism(15, 20));
+        System.out.println("Volume of a Square octagonal prism= " + MathHelpMethods.volumeOctaPrism(15, 20));
     }
 }

@@ -235,6 +235,7 @@ public class MathHelpMethods {
     }
 
     //3d geometry
+
     //sphere
     /**
      * calculates and returns the surface area of a sphere
@@ -253,8 +254,8 @@ public class MathHelpMethods {
     public static double volumeSphere(double r){
         return (4.0/3.0) * Math.PI * (r*r*r);
     }
-    //cube
 
+    //cube
     /**
      * calculates and returns the surface area of a cube
      * @param a double edge
@@ -281,8 +282,8 @@ public class MathHelpMethods {
     public static double spaceDiagonalCube(double a){
         return Math.sqrt(3) * a;
     }
-    //cone
 
+    //cone
     /**
      * calculates and returns the surface area of a right circular Cone
      * @param r double radius
@@ -333,6 +334,7 @@ public class MathHelpMethods {
     public static double volumeCylinder(double r, double h){
         return Math.PI * (r * r) * h;
     }
+
     //tetrahedron
     /**
      * calculates and returns the surface area of a tetrahedron
@@ -351,6 +353,7 @@ public class MathHelpMethods {
     public static double volumeTetrahedron(double a){
         return (a * a * a) / (6 * Math.sqrt(2));
     }
+
     //cuboid
     /**
      * calculates and returns the surface area of a cuboid
@@ -465,6 +468,25 @@ public class MathHelpMethods {
     //pentagonal pyramid
 
     //hexagonal pyramid
+    /**
+     * calculates and returns the surface area of a hexagonal pyramid
+     * @param a double base edge
+     * @param h double height
+     * @return double surface area
+     */
+    public static double surfaceHexPyramid(double a, double h){
+        return (3 * Math.sqrt(3) / 2) * Math.pow(a, 2) + 3 * a * Math.sqrt(Math.pow(h, 2) + (3 * Math.pow(a, 2) / 4));
+    }
+
+    /**
+     * calculates and returns the volume of a hexagonal pyramid
+     * @param a double base edge
+     * @param h double height
+     * @return double volume
+     */
+    public static double volumeHexPyramid(double a, double h){
+        return (Math.sqrt(3) / 2.0) * Math.pow(a, 2) * h;
+    }
 
     //triangular prism
     /**
@@ -500,7 +522,47 @@ public class MathHelpMethods {
         return (3 * Math.sqrt(3) / 2) * Math.pow(a, 2) * h;
     }
     //pentagonal prism
+
+    /**
+     * calculates and returns the surface area of a Pentagonal prism
+     * @param a double base edge
+     * @param h double height
+     * @return double surface area
+     */
+    public static double surfacePentPrism(double a, double h){
+        return 5 * a * h + (1.0 / 2.0) * Math.sqrt(5 * (5 + 2 * Math.sqrt(5))) * Math.pow(a, 2);
+    }
+
+    /**
+     * calculates and returns the area of a Pentagonal prism
+     * @param a double base edge
+     * @param h double height
+     * @return double area
+     */
+    public static double volumePentPrism(double a, double h){
+        return (1.0/4.0)*Math.sqrt(5 * (5 + 2 * Math.sqrt(5)))* Math.pow(a, 2) * h;
+    }
+
     //octagonal prism
+    /**
+     * calculates and returns the surface area of a Octagonal prism
+     * @param a double base edge
+     * @param h double height
+     * @return double surface area
+     */
+    public static double surfaceOctaPrism(double a, double h){
+        return 8 * a * h + 4 * (1 + Math.sqrt(2)) * Math.pow(a, 2);
+    }
+
+    /**
+     * calculates and returns the volume of a Octagonal prism
+     * @param a double base edge
+     * @param h double height
+     * @return double volume
+     */
+    public static double volumeOctaPrism(double a, double h){
+        return 2 * ( 1 + Math.sqrt(2) ) * Math.pow(a, 2) * h;
+    }
 
 
 }
